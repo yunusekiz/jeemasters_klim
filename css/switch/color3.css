@@ -1,0 +1,22 @@
+::selection {background-color:#28af91; color:#fff;}
+span {color:#28af91;}
+.cbp-fwslider nav span {background-color: #28af91;}
+.cbp-fwslider nav span:hover {background-color: #28af91;}
+.cbp-fwdots span.cbp-fwcurrent {background-color: #28af91; box-shadow: 0 0 0 2px #28af91;}
+h4#hide {background-color: #28af91;}
+.take_a_tour .button a {background: #75ada0; /* Old browsers */
+background: -moz-linear-gradient(top,  #75ada0 0%, #28af91 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#75ada0), color-stop(100%,#28af91)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #75ada0 0%,#28af91 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #75ada0 0%,#28af91 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #75ada0 0%,#28af91 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #75ada0 0%,#28af91 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75ada0', endColorstr='#28af91',GradientType=0 ); /* IE6-9 */
+
+}
+#about .heading h1 span, #portfolio .heading h1 span, #blog .heading h1 span, #contact .heading h1 span {color: #28af91;}
+#about .product .description p.title span {color: #28af91;}
+.option-set li a.selected {color: #28af91;}
+form.contact-form input.send_button {background-color: #28af91;}
+footer a {color: #28af91;}
+ol.comment-list a.comment-reply-link {color: #28af91;}

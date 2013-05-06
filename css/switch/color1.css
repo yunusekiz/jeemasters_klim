@@ -1,0 +1,15 @@
+::selection {background-color:#774094; color:#fff;}
+span {color:#774094;}
+.bubble {background: url(../../img/header/bubble_purple.png) no-repeat;}
+.bubble p {color: #fff;}
+nav.main_nav ul li.active a {background-color: #774094;}
+.parallax1 p span, .parallax2 p span, .parallax3 p span {text-shadow: 3px -1px 2px #212121;filter: dropshadow(color=#5b0924, offx=3, offy=-1);}
+#about_section .laptop .featured {background-color: #774094; border:8px solid #571b76;}
+.option-set li a {background-color: #774094;}
+.option-set li a.selected {background-color: #2a2a2a;}
+.blog_size_1 .button a, .blog_size_2 .button a, .blog_size_3 .button a, .blog_size_4 .button a {background-color: #774094;}
+input#submit {background-color: #774094;}
+.subfooter_container a {color: #774094;}
+nav.main_nav_back ul li.active a {background-color: #774094;}
+.comment .content a {color: #774094;}
+h4#hide {background-color: #774094;}

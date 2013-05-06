@@ -1,0 +1,380 @@
+
+/*
+* Klim V.1
+* Copyright 2012, manuelvega
+* DATE : 03/01/2013
+* URL : http://themeforest.net/user/manuelvega
+* Please RATE this item !
+*/
+
+
+/* Table of Contents
+==================================================
+  
+  1. GENERAL STYLES
+  2. HEADER & NAV
+  3. HOME & ABOUT
+  4. WHAT WE DO (PORTFOLIO)
+  5. BLOG
+  6. BLOG POST
+  7. CONTACT
+  8. FOOTER
+  9. SIDEBAR
+ 10. SWITCHER
+ 11. MEDIA QUERYS
+
+
+/* 1 - GENERAL STYLES 
+================================================== */
+
+
+body {font-family:'Arial';}
+a {color: #545454; text-decoration: none;}
+::selection {color:#fff; background-color: #212121;}
+.clear {clear: both;}
+p {font-family: 'Arial'; font-size:12px; color: #898989;}
+h1 {font-size:45px; font-family: 'OpenSansBold'; letter-spacing: -1px;}
+h2 {font-size:40px; letter-spacing: -1px;}
+h3 {font-size:25px; letter-spacing: -1px;}
+h4 {font-size:20px;}
+h5 {font-size:15px;}
+span {font-weight: bold;}
+
+
+/* 2 - HEADER & NAV 
+================================================== */
+
+
+.logo {padding: 50px 0 50px 0;}
+.logo img {padding-top: 5px;}
+nav.main_nav {float: right; margin-top: 20px;}
+nav.main_nav ul li {display: inline; font-weight: bold; text-transform: uppercase; font-size: 11px; padding-left: 13px;}
+nav.main_nav ul li:first-child {padding: 0;}
+nav.main_nav ul li.first_button {float: left; position: absolute;}
+nav.main_nav ul li a {color: #c8c8c8;}
+nav.main_nav ul li.active a {background-color: #d32840; color: #fff; border-radius:2px; padding: 3px 10px;}
+nav.main_nav_back {float: right; margin-top: 20px;}
+nav.main_nav_back ul li {display: inline; font-weight: bold; text-transform: uppercase; font-size: 11px; padding-left: 13px;}
+nav.main_nav_back ul li:first-child {padding: 0;}
+nav.main_nav_back ul li a {color: #c8c8c8;}
+nav.main_nav_back ul li.active a {background-color: #d32840; color: #fff; border-radius:2px; padding: 3px 10px;}
+#sn_container {position: relative;height: 40px;margin: 0 auto; background-color: #212121; width: 980px;}
+#sn_container img {background-color:#d9e37e; float:left;}
+.sticky_nav {z-index: 9999999;position: fixed;top: 0;right: 0;left: 0; background-color: #212121; padding: 15px 0; padding-right: 200px;}
+.novisible {margin-top: -100px;}
+.sticky_nav ul, .blog_nav ul {float: right; margin-top: 10px; font-family: 'OpenSansBold';}
+.sticky_nav ul li, .blog_nav ul li {display: inline; padding-left: 20px;}
+.sticky_nav ul li:first-child {position: absolute; left:0; top:8px; border:none;}
+.blog_nav ul li:first-child {padding-right: 700px;}
+.sticky_nav ul li a, .blog_nav ul li a {color: #e8e8e8;}
+
+
+/* 3 - HOME & ABOUT
+================================================== */
+
+
+#home {text-align: center;}
+.welcome_text h2, .take_a_tour h2 {font-family: 'OpenSansRegular'; color: #716e6e;}
+.welcome_text p {font-family: 'OpenSansRegular'; color: #bfbfbf; font-size:20px; margin-top: -10px;}
+.take_a_tour {margin-top: 30px;}
+.take_a_tour .button {margin:50px 0;}
+.take_a_tour .button a {
+background: #ea8a79; /* Old browsers */
+background: -moz-linear-gradient(top,  #ea8a79 0%, #d44f37 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ea8a79), color-stop(100%,#d44f37)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ea8a79 0%,#d44f37 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ea8a79 0%,#d44f37 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ea8a79 0%,#d44f37 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ea8a79 0%,#d44f37 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea8a79', endColorstr='#d44f37',GradientType=0 ); /* IE6-9 */
+padding: 15px 30px; font-weight: bold; text-transform: uppercase; border-radius:3px; color: #fff;
+}
+.take_a_tour h4 {font-weight: bold; font-family: 'Arial'; letter-spacing: -1px; color: #4b4b4b; margin-bottom: 40px;}
+.action_button img {margin-bottom: 100px; }
+#about {text-align: center; padding-top: 100px;}
+#about .heading, #portfolio .heading, #blog .heading, #contact .heading {border-bottom: 1px solid #eee; padding-bottom: 20px;}
+#about .heading h1, #portfolio .heading h1, #blog .heading h1, #contact .heading h1 {color: #545252;}
+#about .heading h1 span, #portfolio .heading h1 span, #blog .heading h1 span, #contact .heading h1 span {color: #d24d35;}
+#about .heading p, #portfolio .heading p {font-family: 'OpenSansItalic'; margin-right: 290px; color: #a6a6a6; font-size:15px;}
+#portfolio .heading p {margin-right: 300px;}
+#blog .heading p {margin-right: 360px; font-family: 'OpenSansItalic'; font-size:15px;}
+#contact .heading p {margin-right: 140px; font-family: 'OpenSansItalic'; font-size:15px;}
+#about .product.reverse {margin-left: 140px; margin-top: 50px;}
+#about .product.reverse .description {margin-top: 30px;}
+#about .product .description {text-align: left; margin-top: 100px;}
+#about .product .description p.title {margin:0; padding: 0;}
+#about .product .description h3 {font-family: 'OpenSansRegular'; color: #c0c0c0; line-height: 30px; margin: 20px 0;}
+#about .product .description p {margin-bottom: 30px;}
+#about .product .description .button a {background-color: #f3f3f3; color: #a1a1a1; padding: 15px;-webkit-transition: background-color 1000ms linear;
+-moz-transition: background-color 0.3s linear;
+-o-transition: background-color 0.3s linear;
+-ms-transition: background-color 0.3s linear;
+transition: background-color 0.3s linear;}
+#about .product .description .button a:hover {background-color: #e3e3e3;}
+#about .product .description p.title {font-family: 'OpenSansBold'; color: #383838; text-transform: uppercase;}
+#about .product .description p.title span {color: #d24d35;}
+
+
+/* 4 - WHAT WE DO (PORTFOLIO)
+================================================== */
+
+
+#portfolio {padding-top: 100px; text-align: center;}
+.picture {position: relative;}
+.picture img {width: 100%; height: auto;}
+.image-overlay-link,.image-overlay-zoom {height:100%;width: 100%;left: 0;top:-2px;position: absolute;z-index: 40;display: none;background-color: #222;background: rgba(0, 0, 0, 0.7);background-repeat: no-repeat;background-position: 50%;cursor: pointer;overflow:hidden;}
+.image-overlay-link {background-image: url(../img/portfolio/plus_icon.png);}
+.pfolio {margin-left: 0;}
+.pfolio_item img {width: 100%}
+.option-set { list-style: none;margin:30px 0; padding: 20px 0; float: left;}
+.option-set li { display:inline; }
+.option-set li a, .option-set li a.selected {font-family:'OpenSansRegular';color:#a5a5a5; margin-right: 20px; padding: 5px 8px;border-radius: 5px; -webkit-border-radius:2px; -moz-border-radius:2px;}
+.option-set li a.selected {color:#d45039; padding: 10px 8px;}
+.active .button {}
+.pfolio_item {margin-bottom: 15px;}
+.pfolio_desc {text-align: center; background-color: #f5f5f5; padding: 10px 0; margin: 0; display: block;
+-webkit-box-shadow: 2px 2px 0px rgba(50, 50, 50, 0.10);
+-moz-box-shadow:    2px 2px 0px rgba(50, 50, 50, 0.10);
+box-shadow:         2px 2px 0px rgba(50, 50, 50, 0.10);
+margin-bottom: 30px;
+}
+.pfolio_desc h4 {color: #393939; font-size:20px; font-weight: bold; margin: 0; padding-top: 10px;}
+.pfolio_desc p {line-height: 20px; font-style: italic; font-size:12px; color: #909090;}
+.pfolio_buttons {margin-bottom: 200px;}
+.pfolio_item .first {margin-left: 510px;}
+.isotope-item {z-index: 2;}
+.isotope-hidden.isotope-item {pointer-events: none;z-index: 1;}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+
+/* 5 - BLOG
+================================================== */
+
+
+.blog_nav {background-color: #212121; padding: 15px 0; padding-right: 200px;}
+#blog {text-align: center; padding-top: 100px;}
+.blog_entry {margin-top: 50px; text-align: left;}
+.blog_entry h4 {text-transform: uppercase; font-weight: bold; margin:20px 0;}
+.blog_entry a {font-style: italic; font-size:12px; color: #494949;}
+.blog_entry .blog_meta ul {margin:0; margin-top:20px;}
+.blog_entry .blog_meta ul li {display: inline; margin-right: 30px; color: #9f9f9f; font-size:11px;}
+.blog_entry .blog_meta ul li img {padding-right: 10px;}
+
+
+/* 6 - BLOG POST
+================================================== */
+
+
+.post {margin-top: 50px;}
+.post h3 {margin: 30px 0;font-family: 'OpenSansBold'; text-transform: uppercase; color: #484848;}
+.post_meta {margin:10px 0 20px 0;}
+.post_meta ul {padding: 15px 0; margin:0;}
+.post_meta ul li:first-child {margin:0; padding-right:20px; padding-left: 0;}
+.post_meta ul li {display: inline; padding:0 15px; color: #aaaaaa; font-size:11px;}
+.post_meta ul li img {padding-right: 10px;}
+.post_text {margin-bottom: 50px;}
+.post .line {margin-bottom: 50px;}
+.post .categories ul {margin-top:30px; margin-left:0;}
+.post .categories ul li {display: inline; margin-right: 10px; background-color: #212121; padding: 8px;}
+.post .categories ul li a {color: #e6e6e6; font-size:11px; font-family: 'Arial';}
+ol.comment-list, ol.children {list-style: none;}
+#comment-1 {border-top: none;}
+li.comment .comment-wrap {padding: 20px 0;border-top: 1px dotted #ccc;}
+li.comment ol.children {margin-left: 65px;}
+ol.comment-list .avatar-wrap {float: left;margin-right: 15px;}
+ol.comment-list .avatar-wrap a.comment-edit-link {display: block;margin-top: 10px;text-align: center;font-style: italic;}
+ol.comment-list .comment-details {overflow: hidden;}
+ol.comment-list .comment-author {}
+ol.comment-list .comment-author.post-author span {color: #e64141;}
+ol.comment-list .comment-meta {margin-bottom: 15px; color: #888;}
+ol.comment-list a.comment-reply-link {color: #d24d35; font-size:11px; font-style: italic;}
+.comment-content p {margin-bottom: 20px;}
+#reply-title small {float: right;margin-top: 3px;font-family: 'Droid Sans', sans-serif;font-size: 0.666em; /* 12px/18px */line-height: 1.5em; /* 18px/12px */font-weight: normal;text-transform: none;
+font-style: italic;}
+#comment-form p {margin-bottom: 10px;}
+#comment-form input, #comment-form textarea {background-color: #f5f5f5; border: 1px solid #e0e0e0;padding: 6px 10px;border-radius: 0;}
+#comment-form input:hover, #comment-form textarea:hover,
+#comment-form input:focus, #comment-form textarea:focus {border-color: #ccc;}
+#comment-form input {width: 50%; outline: none;}
+#comment-form label, #comment-form input, #comment-form textarea {margin-bottom: 5px;}
+#comment-form label {display: block;clear: both;}
+#comment-form textarea {width: 90%;outline: none;height: 160px;}
+
+
+/* 7 - CONTACT
+================================================== */
+
+
+#contact {padding-top:100px; text-align: center;}
+.contact_section {text-align: left; padding-top: 50px;}
+.contact_info {margin-top: 50px;}
+.contact_info h4 {font-family: 'OpenSansBold'; color: #989898; text-transform: uppercase; font-size:15px;}
+.contact_info .social {border-bottom: 1px solid #eee; padding-bottom: 30px;}
+.contact_info .social ul {margin:0; margin-top: 20px;}
+.contact_info .social ul li {display: inline; padding-right: 5px;}
+.contact_info .find_us {margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 30px;}
+.contact_info .find_us h4 {margin-bottom: 20px;}
+.contact_info .find_us p {line-height: 15px;}
+.contact_info .aditional_info {margin-top: 30px;}
+form.contact-form {margin-top: 50px;}
+form.contact-form input, textarea {background-color: #f3f3f3; border: none; outline: none; padding: 15px 20px 15px 20px; color: #a5a4a4; font-size:12px; font-family: 'Arial'; 
+text-transform: uppercase; margin:10px 0; width: 500px;}
+form.contact-form input.send_button {background-color: #d24d35; text-transform: uppercase; font-weight: bold; color: #fff; width: 540px;}
+
+
+/* 8 - FOOTER
+================================================== */
+
+
+footer {background-color: #212121; margin-top: 150px; padding: 30px 0;}
+footer p {color: #fff; margin-top: 20px;}
+footer a {color: #d24d35;}
+
+
+/* 9 - SIDEBAR
+================================================== */
+
+
+.sidebar {margin-top: 70px;}
+.sidebar ul {margin-left:0;}
+.sidebar .archives {margin-top: 50px;}
+.sidebar .text_widget {margin-top: 50px;}
+.sidebar .categories h5, .sidebar .archives h5, .sidebar .text_widget h5 {font-weight: bold; color: #aeaeae; text-transform: uppercase; margin-bottom:20px;}
+.sidebar .categories ul li, .sidebar .archives ul li {font-family: 'OpenSansRegular'; font-size:13px; border-bottom:1px solid #eee; padding:5px 0;}
+
+
+/* 10 - SWITCHER
+================================================== */
+
+
+#switch {float:left;display:block;background:#fff;-moz-border-radius:0 10px 10px 0;-webkit-border-radius:0 10px 10px 0;border-radius:0 10px 10px 0;position:absolute;left:0;top:20%;padding:15px 20px 15px 10px;
+border:1px solid #d7d7d7;}
+#switch h4 {font-size:15px; color:#4d4d4d;margin-bottom: 10px;}
+#switch ul li {font-size:12px; margin:5px; }
+#switch ul li a {color:#fff;}
+#show {position:absolute;left:0;top:20%;background:#fff;-moz-border-radius:0 10px 10px 0;-webkit-border-radius:0 10px 10px 0;border-radius:0 10px 10px 0;behavior:url(PIE.html);
+padding:0px 20px 15px 10px; color: #000; border:1px solid #d7d7d7;}
+#show h4, #hide {cursor:pointer;color: #4d4d4d; font-size:15px; margin-top: 20px; font-weight: bold; font-size:12px; font-family: 'Arial';}
+#show h4 span,#hide span {font-weight:400;display:block;clear:both;}
+h4#hide {margin-top: 30px; border-radius: 3px; background-color: #d24d35; width: 100px; text-align: center; padding: 10px 5px; color: #eee; font-weight: bold; font-size:12px; font-family: 'Arial';}
+ul.color {padding: 0; margin: 0;}
+ul.color h5 {border-bottom:1px dotted #cecece; padding-bottom:15px; text-transform: uppercase; color: #464646; font-size:20px; margin-top: 0; padding-top:0;}
+ul.color li {display: inline;}
+ul.color h5 {font-family: 'Arial'; font-weight: bold; font-size:15px; color: #585858; letter-spacing: -1px;}
+
+
+/* 11 - MEDIA QUERYS
+================================================== */
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+.slider_section {margin:30px 0;}
+#about .product .description {margin-top:40px;}
+#about .product.reverse .span3 {position: absolute; left:110px;}
+#about .product.reverse .span7 {margin-left: 150px; margin-top:40px;}
+form.contact-form input, textarea {width: 290px;}
+form.contact-form input.send_button {width: 330px;}
+.blog_entry h4 {line-height: 30px;}
+
+
+}
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 767px) {
+
+body {padding:0 50px;}
+footer p {padding-left: 20px;}
+#about .product .span3 {margin-top: -100px; margin-bottom: 100px;}
+#about .product.reverse .description {position: absolute; left:50px;}
+#about .product.reverse .span7 {margin-top: 300px; margin-left: -160px;}
+.sticky_nav ul {padding-right: 280px;}
+section#comments {text-align: left;}
+form#comment-form {text-align: left;}
+.simple-form textarea {width: 500px;}
+.blog_nav {position: absolute; left:0; right: 0; padding: 20px 0 60px 0;}
+.blog_nav ul {position: absolute;}
+.blog_nav ul li:first-child {padding-right: 1px;}
+.post {margin-top: 100px;}
+.sidebar {display: none;}
+
+
+}
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+@media only screen and (max-width: 400px) {
+
+.welcome_text h2, .take_a_tour h2 {margin-bottom: 30px;}
+.welcome_text p {margin-bottom: 30px;}
+.sticky_nav ul li a {font-size:11px;}
+.sticky_nav ul {padding-right: 650px;}
+.sticky_nav ul li:first-child {margin-top: 2px;}
+#about .heading p, #portfolio .heading p {margin-right: 0; margin-top: 30px;}
+#about .product.reverse .span7 {margin-left:-50px;}
+#blog .heading p {margin-right: 0;}
+#contact .heading p {margin-right: 0;}
+form.contact-form input, textarea {width: 230px;}
+form.contact-form input.send_button {width: 270px;}
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+form.contact-form input, textarea {width: 380px;}
+form.contact-form input.send_button {width: 420px;}
+
+}
